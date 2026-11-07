@@ -8,7 +8,7 @@ endif
 
 .PHONY: clean project sim
 
-CLEAN_OBJS = *.log *.jou dfx_runtime.txt .Xil/
+CLEAN_OBJS = *.log *.jou dfx_runtime.txt .Xil/ project/
 
 project:
 	$(VIVADO) -mode batch -source ./scripts/regen_project.tcl -log project.log -jou project.jou
