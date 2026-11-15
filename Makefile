@@ -16,5 +16,8 @@ project:
 sim:
 	$(VIVADO) -mode batch -source ./scripts/sim.tcl -log sim.log -jou sim.jou
 
+wav:
+	$(VIVADO) -mode gui -source ./scripts/wav.tcl -log wav.log -jou wav.jou
+
 clean:
 	rm -rf $(CLEAN_OBJS)
